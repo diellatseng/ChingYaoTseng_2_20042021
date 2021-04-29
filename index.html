@@ -13,19 +13,21 @@
         <!--Awesome Font for icons END-->
         <!--Google Font START-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
         <!--Google Font END-->        
     </head>
     <body>
         <header>
-            <img src="images\logo\Reservia.svg" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
-            </nav>
-            <div class="subscribe_button"><a class="revBlue" href="#">S'inscrire</a></div>
+            <div><a href="index.html"><img src="images\logo\Reservia.svg" alt="logo"></a></div>
+            <div class="nav_sbc">
+                <nav>
+                    <ul>
+                        <a href="#" class="nav_btn"><span><li>Hébergements</li></span></a>
+                        <a href="#" class="nav_btn"><span><li>Activités</li></span></a>
+                    </ul>
+                </nav>
+                <a class="revBlue" href="#"><p class="subscribe_button">S'inscrire</p></a>  
+            </div>
         </header>
         <main>
             <section>
@@ -42,8 +44,9 @@
                     </form>
                 </div>
                 <!--SearchBox END-->
+              
                 <!--Filters START-->
-                <h2>Filtres</h2>
+                <h3>Filtres</h3>
                 <div id="filter-container">
                     <i class="fas fa-money-bill-wave revBlue"></i><button class="btn">Économique</button>
                     <i class="fas fa-child revBlue"></i><button class="btn">Familial</button>
