@@ -1,0 +1,72 @@
+/* 
+Theme colors: 
+- #0065FC (Blue)
+- #DEEBFF (Light blue)
+- #F2F2F2 (Gray)
+*/
+
+/* Font settings */
+* {font-family: 'Raleway', sans-serif;}
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.2em;}
+h3 {font-size: 1em;}
+a {text-decoration: none; color: black;}
+
+/* Color settings */
+.revBlue {
+    color: #0065FC;
+}
+.bg_gray {
+    background-color: #F2F2F2;
+}
+
+/* Border Settings */
+.round-border {
+    border-radius: 25px;
+}
+
+/* List settings */
+li {list-style: none;}
+
+/* Page settings */
+body {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header settings */
+header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_sbc {
+    display: flex;
+}
+
+/* Navigation settings*/
+nav ul {
+    display: flex;
+    padding: 0;
+}
+nav ul li { 
+    padding: 20px;
+    margin: 0 30px;
+    text-align: center;
+}
+.nav_btn:hover {
+    border-top:#0065FC solid 2px;
+    color: #0065FC;
+}
+
+/* Subscribe button*/
+.subscribe_button {
+    padding: 20px;
+}
+
+.subscribe_button:hover {
+    background-color: #0065FC;
+    color: white;
+}
