@@ -80,7 +80,7 @@ nav ul li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px 0 0 15px;
+    border-radius: 10px 0 0 15px;
 }
 input[type="text"].destination {
     border: 2px solid #F2F2F2;
