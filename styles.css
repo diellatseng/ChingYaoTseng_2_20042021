@@ -3,50 +3,45 @@ Theme colors:
 - #0065FC (Blue)
 - #DEEBFF (Light blue)
 - #F2F2F2 (Gray)
+Additional colors:
+- #CCC (Darker Gray)
+- #0051c9 (Darker Blue)
 */
 
-/* Font settings */
+/* Basic settings */
+/* Font */
 * {font-family: 'Raleway', sans-serif;}
 h1 {font-size: 1.5em;}
 h2 {font-size: 1.2em;}
 h3 {font-size: 1em;}
 a {text-decoration: none; color: black;}
-
-/* Color settings */
-.revBlue {
-    color: #0065FC;
-}
-.bg_gray {
-    background-color: #F2F2F2;
-}
-
-/* Border Settings */
-.round-border {
-    border-radius: 25px;
-}
-
-/* List settings */
+/* Color */
+.revBlue {color: #0065FC;}
+.lightBlue {background-color: #DEEBFF;}
+.bg_gray {background-color: #F2F2F2;}
+/* Border */
+.round-border {border-radius: 25px;}
+/* List */
 li {list-style: none;}
 
-/* Page settings */
+/* Main page */
 body {
-    width: 80%;
+    width: 80%; 
     margin: auto;
 }
 
-/* Header settings */
+/* Header */
 header {
     height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.nav_sbc {
+.nav_subscribe {
     display: flex;
 }
 
-/* Navigation settings*/
+/* Navigation */
 nav ul {
     display: flex;
     padding: 0;
@@ -65,8 +60,52 @@ nav ul li {
 .subscribe_button {
     padding: 20px;
 }
-
 .subscribe_button:hover {
     background-color: #0065FC;
     color: white;
+}
+
+/* Search form */
+#search_form {
+    width: 35%;
+}
+.search-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px auto 120px;
+}
+.dest_icon {
+    background-color: #F2F2F2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+}
+input[type="text"].destination {
+    border: 2px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 1em;
+}
+input[type="text"].destination:hover {
+    border: 2px solid #CCC;
+}
+input[type="submit"].rechercher {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+input[type="submit"].rechercher:hover {
+    background-color: #0051c9;
+}
+
+/** Filters **/
+#filter-container {
+    height: 48px;
+    width: fit-content;
+    background-color: green;
 }

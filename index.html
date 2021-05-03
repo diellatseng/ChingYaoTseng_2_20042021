@@ -4,21 +4,22 @@
         <title>Welcome to Revervia</title>
         <meta charset="UTF-8">
         <meta name="description" content="OpenclassRooms: Front-END Developer course - Projet 2 Revervia">
-        <meta name="keywords" content="OpenclassRooms, Projet, Revervia">
-        <meta name="author" content="Diella Ching-Yao Tseng">
+        <meta name="keywords" content="OpenclassRooms, Web Dev, Web Developer, Projet, Projet 2, Revervia">
+        <meta name="author" content="Diella, Ching-Yao TSENG">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
         <link rel="stylesheet" href="styles.css">
-        <!--Awesome Font for icons START-->
+
+        <!--Embedding Fontawesome Icons-->
         <script src="https://kit.fontawesome.com/7701b960e8.js" crossorigin="anonymous"></script>
-        <!--Awesome Font for icons END-->
-        <!--Google Font START-->
+        <!--Embedding Google Font-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        <!--Google Font END-->        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">        
     </head>
     <body>
         <header>
             <div><a href="index.html"><img src="images\logo\Reservia.svg" alt="logo"></a></div>
-            <div class="nav_sbc">
+            <div class="nav_subscribe">
                 <nav>
                     <ul>
                         <a href="#" class="nav_btn"><span><li>Hébergements</li></span></a>
@@ -34,24 +35,24 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <!--SearchBox START-->
-                <div class="searchbox-container">
-                    <form action="#" method="POST">
-                        <i class="fas fa-map-marker-alt bg_gray"></i>
-                        <input type="text" id="destination" name="destination">
-                        <input type="submit" value="Rechercher" class="revBlue">
-                    </form>
-                </div>
-                <!--SearchBox END-->
-                <!--Filters START-->
-                <h3>Filtres</h3>
+                <!--SearchBox-->
+                <form id="search_form" action="#" method="POST">
+                    <div class="search-container">
+                        <span class="dest_icon"><i class="fas fa-map-marker-alt bg_gray"></i></span>
+                        <input type="text" class="destination" name="destination" placeholder="Destination...">
+                        <input type="submit" class="rechercher" value="Rechercher">
+    
+                    </div>
+                </form>
+
+                <!--Filters-->
                 <div id="filter-container">
-                    <i class="fas fa-money-bill-wave revBlue"></i><button class="btn">Économique</button>
-                    <i class="fas fa-child revBlue"></i><button class="btn">Familial</button>
-                    <i class="fas fa-heart revBlue"></i><button class="btn">Romantique</button>
-                    <i class="fas fa-dog revBlue"></i><button class="btn">Animaux autorisés</button>
+                    <span>Filtres</span>
+                    <span><i class="fas fa-money-bill-wave revBlue lightBlue"></i><button class="btn">Économique</button></span>
+                    <span><i class="fas fa-child revBlue lightBlue"></i><button class="btn">Familial</button></span>
+                    <span><i class="fas fa-heart revBlue lightBlue"></i><button class="btn">Romantique</button></span>
+                    <span><i class="fas fa-dog revBlue lightBlue"></i><button class="btn">Animaux autorisés</button></span>
                 </div>
-                <!--Filters END-->
                 <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
 
