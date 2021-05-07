@@ -162,7 +162,7 @@ input[type="submit"].rechercher:hover {
 /** Main results **/ 
 .result-section {
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: 68% 30%;
     column-gap: 2%;
     row-gap: 48px;
 }
@@ -170,18 +170,33 @@ input[type="submit"].rechercher:hover {
     background-color: var(--gray);
     border-radius: 25px; padding: 25px;
 }
-.accom li, .popular li, .activities li {
+.accom li, .popular li {
     background-color: white;
     box-shadow: 1px 1px 5px var(--dark-gray);
     border-radius: 1.5em;
     padding: 5px;
 }
-.content { padding-left: 1em;}
+.content { 
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+/** 
+WHHYYYYYYYYYYYYYYYYYYYYYY 
+**/
+.content span {
+    justify-self: flex-end;''
+}
+/** 
+WHHYYYYYYYYYYYYYYYYYYYYYY 
+**/
+
 .cheap-price {font-weight: 600;}
 .normal-price {font-weight: 400;}
 
 /** rating stars **/
-.fa-star { color: var(--gray); font-size: 0.8em;}
+.fa-star { color: var(--dark-gray); font-size: 0.8em;}
 .rev-blue { color: var(--rev-blue); }
 
 /** accommodation area **/
@@ -213,6 +228,10 @@ input[type="submit"].rechercher:hover {
     display: flex;
     justify-content: space-between;
 }
+.popular li {
+    width: 100%;
+    height: 150px;
+}
 .popular a {
     display: flex;
     flex-wrap: wrap;
@@ -223,25 +242,58 @@ input[type="submit"].rechercher:hover {
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
-.popular li {
-    width: 100%;
-    height: 150px;
-}
 .popular div {
     width: 200px;
+    background-color:brown ;
 }
 
+
 /** acrivities area **/
+.activities-container {
+    margin: 40px 0;
+}
 .activities {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 35px;
+}
+.activities li {
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px 1px var(--dark-gray);
 }
 .activities img {
-    width: 100px;
-    height: 125px;
+    width: 100%;
+    height:100%;
     object-fit: cover;
+    border-radius: 25px;
+}
+.activities div {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    border-radius: 0 0 25px 25px ;
+}
+.act-1 {
+    grid-row: span 6;
+}
+.act-2 {
+    grid-row: span 4;
+}
+.act-3 {
+    grid-row: span 6;
+}
+.act-4 {
+    grid-row: span 3;
+}
+.act-5 {
+    grid-row: span 3;
+}
+.act-6 {
+    grid-row: span 2;
 }
 
 
