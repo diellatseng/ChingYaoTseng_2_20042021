@@ -186,7 +186,7 @@ input[type="submit"].rechercher:hover {
 WHHYYYYYYYYYYYYYYYYYYYYYY 
 **/
 .content span {
-    justify-self: flex-end;''
+    justify-self: flex-end;
 }
 /** 
 WHHYYYYYYYYYYYYYYYYYYYYYY 
@@ -276,6 +276,9 @@ WHHYYYYYYYYYYYYYYYYYYYYYY
     bottom: 0;
     background-color: white;
     border-radius: 0 0 25px 25px ;
+}
+.activities h3 {
+    padding: 10px 0 0 10px;
 }
 .act-1 {
     grid-row: span 6;
