@@ -19,7 +19,7 @@ header, main {
     #logo {
         grid-column: unset;
     }
-    #subscribe_button {
+    #subscribe-button {
         order: 0;
     }
     nav {
@@ -90,20 +90,20 @@ nav li a:hover{
 
 
 /* Subscribe button*/
-#subscribe_button {
+#subscribe-button {
     font-weight: 600;
     text-align: center;
     padding: 1.5em;    
     color: var(--rev-blue);
     order: 1;
 }
-#subscribe_button:hover {
+#subscribe-button:hover {
     background-color: var(--rev-blue);
     color: white;
 }
 
 /* Search form */
-#search_form {
+#search-form {
     width: 35%;
     margin: 1em 0;
 }
@@ -197,14 +197,20 @@ input[type="submit"].rechercher:hover {
     column-gap: 2%;
     row-gap: 2em;
 }
-.main-result {
+.result-container {
     background-color: var(--gray);
     border-radius: 1em; 
     padding: 2em;
 }
-.main-result h1 {
+.result-container h1 {
     display: flex;
     justify-content: space-between;
+}
+.popular-container {
+    order: 1;
+}
+.accom-container {
+    order: 0;
 }
 .accom li, .popular li {
     background-color: white;
@@ -279,7 +285,7 @@ input[type="submit"].rechercher:hover {
 .activities {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, .375em);
+    grid-template-rows: repeat(10, .4em);
     grid-gap: 2.1875em;
 }
 .activities li {
