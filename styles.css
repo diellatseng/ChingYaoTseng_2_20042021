@@ -1,4 +1,35 @@
-/* Color settings */
+header, main {
+    width: 100%; 
+    margin: auto;
+}
+@media only screen and (min-width: 600px) {
+    header, main {
+        width: 90%; 
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+    }
+    #logo {
+        grid-column: unset;
+    }
+    #subscribe-button {
+        order: 0;
+    }
+    nav {
+        order: 1;
+    }
+    #filter-container {
+        flex-wrap: wrap;
+    }
+}
+
 :root {
     --gray: #F2F2F2;
     --light-blue: #DEEBFF;
@@ -7,39 +38,36 @@
     --dark-gray: #CCC;
   }
 
-/* Font */
-html {font-size: 16px;}
-body {font-family: 'Raleway', sans-serif;}
-h1 {font-size: 1.5rem; font-weight: 700; margin: 0.5em 0;}
-h2 {font-size: 1.2rem; font-weight: 600; margin: 0.2em 0;}
-h3 {font-size: 1rem; font-weight: 600;}
+html, body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {font-size: 1.5rem; font-weight: 600; margin-bottom: .7em;}
+h2 {font-size: 1.3rem; font-weight: 600; margin-bottom: .7em;}
+h3 {font-size: 1.1rem; font-weight: 600; margin-bottom: .5em;}
 a {text-decoration: none; color: black;}
-p {margin: 0.2em 0;}
+p {margin-bottom: .5em}
 
 /* Main page */
-body {
-    width: 90%; 
-    margin: auto;
-}
+
 /* List */
 li {list-style: none;}
 
 /* Header */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: space-between;
 }
-header div {
-    display: flex;
-    align-items: center;
+#logo {
+    grid-column: 4 span;
 }
 
 /* Navigation */
 nav {
     display: flex;
     align-items: center;
-
 }
 nav ul {
     display: flex;
@@ -53,25 +81,29 @@ nav li {
     text-align: center;
 }   
 nav li:hover {
-    border-top: var(--rev-blue) solid 2px;
+    border-top: var(--rev-blue) solid .125em;
 }
 nav li a:hover{
     color: var(--rev-blue);
 }
 
+
+
 /* Subscribe button*/
-#subscribe_button {
+#subscribe-button {
     font-weight: 600;
+    text-align: center;
     padding: 1.5em;    
     color: var(--rev-blue);
+    order: 1;
 }
-#subscribe_button:hover {
+#subscribe-button:hover {
     background-color: var(--rev-blue);
     color: white;
 }
 
 /* Search form */
-#search_form {
+#search-form {
     width: 35%;
     margin: 1em 0;
 }
@@ -87,17 +119,17 @@ nav li a:hover{
     background-color: var(--gray);
 }
 input[type="text"].destination {
-    border: 2px solid var(--gray);
+    border: .125em solid var(--gray);
     font-weight: bold;
     font-size: 1em;
 }
 input[type="text"].destination:hover {
-    border: 2px solid var(--dark-gray);
+    border: .125em solid var(--dark-gray);
 }
 input[type="submit"].rechercher {
     background-color: var(--rev-blue);
     color: white;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 1em 1em 0;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -109,12 +141,14 @@ input[type="submit"].rechercher:hover {
 
 /** Filters **/
 #filter-container {
-    width: 60%;
+    width: 70%;
     font-weight: 600;
+    font-size: 1.1em;
     display: flex;
     justify-content: space-between;
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
+
 #filter-container span {
     display: flex;
     align-items: center;
@@ -122,71 +156,78 @@ input[type="submit"].rechercher:hover {
 .btn {
     background-color: white;
     border-radius: 1.5em;
-    border: 3px var(--gray) solid;
+    border: .1875em var(--gray) solid;
     border-left: none;
     font-weight: 600;
     display: flex;
     align-items: center;
-    margin: 0 0.5em;
+    margin: 0 .5em;
     cursor: pointer;
-    padding: 0 0.5em;
+    padding: 0 1.7em 0 2em;
     font-size: 1em;
 }
 .btn > span { 
     background-color: var(--light-blue); 
     color: var(--rev-blue);
     font-size: 1em;
-    border-radius: 1.2em;
-    padding: 0.7em 1.3em;
+    border-radius: 1.5em;
+    padding: .8em 1.3em;
     justify-content: center;
-    margin: 0 0.2em 0 -0.5em;
+    margin: -.15em 1em -.15em -2.2em;
 }
-
-.btn:hover{
-    box-shadow: 0 0 10px 0 var(--dark-gray);
-    background-color: var(--gray);
+.btn:hover {
+    box-shadow: 0 0 .7em .1em var(--dark-gray);
 }
-
 #info {
     display: flex;
     align-items: center;
-    margin: 1em 0;
+    margin-bottom: 1em;
 }
 .fa-stack { 
-    font-size: 0.8rem; 
+    font-size: .8em; 
     margin: 0 1em;
 }
 .fa-circle { color: var(--gray);}
 .fa-info { color: var(--rev-blue);}
 
 /** Main results **/ 
-.result-section {
+.accom-popular-container{
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: 68% 30%;
     column-gap: 2%;
-    row-gap: 48px;
+    row-gap: 2em;
 }
-.main-result {
+.result-container {
     background-color: var(--gray);
-    border-radius: 25px; padding: 25px;
+    border-radius: 1em; 
+    padding: 2em;
 }
-.accom li, .popular li, .activities li {
+.result-container h1 {
+    display: flex;
+    justify-content: space-between;
+}
+.popular-container {
+    order: 1;
+}
+.accom-container {
+    order: 0;
+}
+.accom li, .popular li {
     background-color: white;
-    box-shadow: 1px 1px 5px var(--dark-gray);
+    box-shadow: .1em .1em .5em .1em var(--dark-gray);
     border-radius: 1.5em;
-    padding: 5px;
+    padding: .4em;
 }
-.content { padding-left: 1em;}
 .cheap-price {font-weight: 600;}
 .normal-price {font-weight: 400;}
 
 /** rating stars **/
-.fa-star { color: var(--gray); font-size: 0.8em;}
+.fa-star { color: var(--dark-gray); font-size: 0.5em;}
 .rev-blue { color: var(--rev-blue); }
 
 /** accommodation area **/
 .accom {
-    height: 500px;
+    height: 35em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -194,58 +235,118 @@ input[type="submit"].rechercher:hover {
 }
 .accom img {
     width: 100%;
-    height: 115px;
+    height: 8em;
     object-fit: cover;
     border-radius: 1.5em 1.5em 0 0;
 }
 .accom li {
     width: 32%;
-    height: 200px;
+    height: 14.5em;
+}
+.accom div {
+    padding: .5em 1em;
 }
 
 /** popular area **/
 .popular {
+    height: 38em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.popular h1 {
-    display: flex;
-    justify-content: space-between;
+.popular li {
+    width: 100%;
+    height: 10em;
 }
 .popular a {
     display: flex;
     flex-wrap: wrap;
 }
 .popular img {
-    width: 120px;
-    height: 140px;
+    width: 7.5em;
+    height: 9.2em;
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
-.popular li {
-    width: 100%;
-    height: 150px;
+    border-radius: 1.5em 0 0 1.5em;
 }
 .popular div {
-    width: 200px;
+    width: 12.5em;
+    padding: 1em;
+    position: relative;
+}
+.badge {
+    position: absolute;
+    bottom: 0.3125em;
 }
 
 /** acrivities area **/
+.activities-container {
+    margin: 2.5em 0;
+}
 .activities {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, .4em);
+    grid-gap: 2.1875em;
+}
+.activities li {
+    position: relative;
+    border-radius: 1em;
+    box-shadow: .1em .1em .5em .1em var(--dark-gray);
 }
 .activities img {
-    width: 100px;
-    height: 125px;
+    width: 100%;
+    height:100%;
     object-fit: cover;
+    border-radius:1em;
+}
+.activities div {
+    width: 100%;
+    height: 3.125em;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    align-items: center;
+}
+.activities h3 { 
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.act-1 {
+    grid-row: span 10;
+}
+.act-2 {
+    grid-row: span 6;
+}
+.act-3 {
+    grid-row: span 10;
+}
+.act-4 {
+    grid-row: span 5;
+}
+.act-5 {
+    grid-row: span 5;
+}
+.act-6 {
+    grid-row: span 4;
 }
 
 
 /** footer **/
 footer {
+    width: 100%;
     background-color: var(--gray);
 }
+footer section {
+    width: 90%;
+    margin: auto;
+    padding: 3.125em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+footer li {
+    margin: 1em 0;
+}
+
