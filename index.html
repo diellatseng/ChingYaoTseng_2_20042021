@@ -20,18 +20,15 @@
     <body>
         <header>
             <a id="logo" href="index.html"><img src="images/logo/Reservia.svg" alt="logo" ></a>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <a id="subscribe_button" href="#">S'inscrire</a>  
-                </div>
-            </div>
+            <a id="subscribe_button" href="#">S'inscrire</a>     
+            <nav>
+                <ul>
+                    <li><a href="#Hébergements">Hébergements</a></li>
+                    <li><a href="#Activités">Activités</a></li>
+                </ul>
+            </nav>
         </header>
+        
         <main>
             <section>
                 <div>
@@ -68,7 +65,7 @@
             <section class="accom-popular-container">
                 <!-- accommodations -->
                 <div class="main-result">
-                    <h1>Hébergements à Marseille</h1>
+                    <h1 id="Hébergements">Hébergements à Marseille</h1>
                     <ul class="accom">
                         <li>
                             <a href="#">
@@ -94,7 +91,7 @@
                                 <img src="images/accommodations/hotel_du_port_small.jpg" alt="hotel du port">
                                 <div>
                                     <h3>Hotel du Port</h3>
-                                    <p>Nuit à partir de <span class="cheap-price">52</span>€</p>
+                                    <p>Nuit à partir de <span class="normal-price">52</span>€</p>
                                     <!--rating badge START-->
                                     <span>
                                         <i class="fas fa-star rev-blue"></i>
@@ -254,7 +251,7 @@
             <!-- activities -->
             <section>
                 <div class="activities-container">
-                    <h1>Activités à Marseille</h1>
+                    <h1 id="Activités">Activités à Marseille</h1>
                     <ul class="activities">
                         <li class="act-1">
                             <a href="#">

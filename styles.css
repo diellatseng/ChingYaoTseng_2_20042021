@@ -1,3 +1,35 @@
+header, main {
+    width: 100%; 
+    margin: auto;
+}
+@media only screen and (min-width: 600px) {
+    header, main {
+        width: 90%; 
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+    }
+    #logo {
+        grid-column: unset;
+    }
+    #subscribe_button {
+        order: 0;
+    }
+    nav {
+        order: 1;
+    }
+    #filter-container {
+        flex-wrap: wrap;
+    }
+}
+
 :root {
     --gray: #F2F2F2;
     --light-blue: #DEEBFF;
@@ -18,29 +50,24 @@ a {text-decoration: none; color: black;}
 p {margin-bottom: .5em}
 
 /* Main page */
-header, main {
-    width: 90%; 
-    margin: auto;
-}
+
 /* List */
 li {list-style: none;}
 
 /* Header */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: space-between;
 }
-header div {
-    display: flex;
-    align-items: center;
+#logo {
+    grid-column: 4 span;
 }
 
 /* Navigation */
 nav {
     display: flex;
     align-items: center;
-
 }
 nav ul {
     display: flex;
@@ -60,11 +87,15 @@ nav li a:hover{
     color: var(--rev-blue);
 }
 
+
+
 /* Subscribe button*/
 #subscribe_button {
     font-weight: 600;
+    text-align: center;
     padding: 1.5em;    
     color: var(--rev-blue);
+    order: 1;
 }
 #subscribe_button:hover {
     background-color: var(--rev-blue);
@@ -117,6 +148,7 @@ input[type="submit"].rechercher:hover {
     justify-content: space-between;
     margin: 1.5em 0;
 }
+
 #filter-container span {
     display: flex;
     align-items: center;
@@ -311,3 +343,4 @@ footer section {
 footer li {
     margin: 1em 0;
 }
+
