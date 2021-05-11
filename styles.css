@@ -50,8 +50,6 @@ header {
         margin: 0 46rem 0 0 ;
     }
 }
-
-/* = Subscribe button = */
 #subscribe-button {
     font-weight: 600;
     margin: 1em 1em 0 0 ;
@@ -59,52 +57,58 @@ header {
     color: var(--rev-blue);
     order: 0;
 }
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #subscribe-button {
         padding: 1.5em; 
+        margin: 0 ;
         order: 1;
     }
+    #subscribe-button:hover {
+        background-color: var(--rev-blue);
+        color: white;
+    }
 }
-
-#subscribe-button:hover {
-    background-color: var(--rev-blue);
-    color: white;
-}
-
 
 /* === Navigation ==== */
 nav {
     width: 100%;
 }
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 nav li { 
-    padding: .5em 0;
     text-align: center;
-}   
+}
+nav li a {
+    padding: 2em 3em;
+    display: block;
+    border-bottom: .2em solid var(--gray);
+    }
 @media only screen and (min-width: 768px) {
     nav {
         width: auto;
     }
     nav ul {
+        display: flex;
+        align-items: center;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
     }
     nav li { 
-        padding: 2.5em;
-        margin: 0 1em;
+        padding: 0;
         text-align: center;
+        border-bottom: none;
     }   
-    nav li:hover {
-        border-top: var(--rev-blue) solid .125em;
+    nav li a {
+    padding: 2em 3em;
+    display: block;
+    border-bottom: none;
     }
     nav li a:hover{
         color: var(--rev-blue);
+        border-top: var(--rev-blue) solid .125em;
     }
 }
 
