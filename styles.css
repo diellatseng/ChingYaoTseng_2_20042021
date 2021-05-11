@@ -34,7 +34,16 @@ header, main {
         width: 90%; 
     }
 }
-
+.tittle-search-filter-container {
+    width: 90%;
+    margin: 1em auto;
+}
+@media only screen and (min-width: 768px){
+    .tittle-search-filter-container {
+        width: 100%;
+        margin: none;
+    }
+}
 /* ==== Header ==== */
 header {
     display: flex;
@@ -81,7 +90,8 @@ nav li {
     text-align: center;
 }
 nav li a {
-    padding: 2em 3em;
+    padding: 1em 0;
+    margin-bottom: .5em;
     display: block;
     border-bottom: .2em solid var(--gray);
     }
@@ -114,24 +124,40 @@ nav li a {
 
 /* Search form */
 #search-form {
-    width: 35%;
+    width: 100%;
     margin: 1em 0;
+}
+@media only screen and (min-width: 768px){
+    #search-form {
+        width: 35%;
+    }
 }
 .search-container {
     height: 3em;
     display: grid;
-    grid-template-columns: 3em auto 8em;
+    grid-template-columns: 3em auto 3.5em;
     background-color: var(--gray);
     border-radius: 1em;
 }
+@media only screen and (min-width: 768px){
+    .search-container {
+        grid-template-columns: 3em auto 8em;
+    }    }
 .fa-map-marker-alt {
     margin: auto;
     background-color: var(--gray);
 }
 input[type="text"].destination {
-    border: .125em solid var(--gray);
+    border: .125em 0 .125em .125em solid var(--gray);
     font-weight: bold;
     font-size: 1em;
+    padding: 0 1em;
+    margin-right: -1em;
+}
+@media only screen and (min-width: 768px){
+    input[type="text"].destination {
+        border: .125em solid var(--gray);
+    }
 }
 input[type="text"].destination:hover {
     border: .125em solid var(--dark-gray);
@@ -147,6 +173,29 @@ input[type="submit"].rechercher {
 }
 input[type="submit"].rechercher:hover {
     background-color: var(--dark-blue);
+}
+
+/* Search icon display*/
+.search-icon {
+        display: block;
+        background-color: var(--rev-blue);
+        color: white;
+        border-width: 0;
+        border-radius: 1em;
+        padding: 0;
+    }
+@media only screen and (min-width: 768px){
+    .search-icon {
+        display: none;
+    }
+}
+.rechercher {
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    .rechercher {
+        display: block;
+    }
 }
 
 /** Filters **/
