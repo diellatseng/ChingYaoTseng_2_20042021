@@ -137,7 +137,7 @@ nav li a {
 }
 @media only screen and (min-width: 768px){
     #search-form {
-        width: 35%;
+        width: 30%;
     }
 }
 .search-container {
@@ -226,8 +226,8 @@ input[type="submit"].rechercher:hover {
     align-items: center;
 }
 @media only screen and (min-width: 768px) {
-    #filter-container span:first-child {
-        margin-right: 1em;
+    #filter-container span {
+        margin-right: .5em;
     }
 }
 .btn {
@@ -235,7 +235,7 @@ input[type="submit"].rechercher:hover {
     border-radius: 1.5em;
     border: .15em var(--medium-gray) solid;
     border-left: none;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
     margin: 0 .5em;
@@ -243,6 +243,13 @@ input[type="submit"].rechercher:hover {
     padding: 0 1.7em 0 2em;
     font-size: 1em;
 }
+@media only screen and (min-width: 768px) {
+    .btn {
+        margin: 0;
+        padding: 0 1em 0 1.8em;
+        font-size: 1.1em;
+}
+
 .btn > span { 
     background-color: var(--light-blue); 
     color: var(--rev-blue);
@@ -250,8 +257,9 @@ input[type="submit"].rechercher:hover {
     border-radius: 1.5em;
     padding: .8em 1.3em;
     justify-content: center;
-    margin: -.15em 1em -.15em -2.2em;
+    margin: -.15em .5em -.15em -2.2em;
 }
+
 .btn:hover {
     box-shadow: 0 0 .7em .1em var(--medium-gray);
 }
@@ -491,4 +499,3 @@ footer section {
 footer li {
     margin: 1em 0;
 }
-
