@@ -522,23 +522,31 @@ input[type="submit"].rechercher:hover {
     flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-    .act-1 {
-        grid-row: span 10;
-    }
-    .act-2 {
-        grid-row: span 6;
-    }
-    .act-3 {
-        grid-row: span 10;
-    }
-    .act-4 {
-        grid-row: span 5;
-    }
-    .act-5 {
-        grid-row: span 5;
-    }
-    .act-6 {
-        grid-row: span 4;
+    @media screen and (min-width: 768px) {
+        .act-1 {
+            grid-row: span 10;
+            order: 1;
+        }
+        .act-2 {
+            grid-row: span 6;
+            order: 2;
+        }
+        .act-3 {
+            grid-row: span 4;
+            order: 6;
+        }
+        .act-4 {
+            grid-row: span 10;
+            order: 3;
+        }
+        .act-5 {
+            grid-row: span 5;
+            order: 4;
+        }
+        .act-6 {
+            grid-row: span 5;
+            order: 5;
+        }
     }
 }
 
