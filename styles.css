@@ -339,8 +339,8 @@ input[type="submit"].rechercher:hover {
     .accom-container {
         order: 0;
     }
-    .accom-container h3:last-child{
-        margin: .7em 0;
+    .accom-container h3 {
+        margin: 0 0 .5em 0;
     }
 }
 
@@ -463,35 +463,42 @@ input[type="submit"].rechercher:hover {
 
 /** acrivities area **/
 .activities-container {
-    margin: 0 0 2.5em 0;
+    padding: 0 2em 2em 2em;
 }
 @media screen and (min-width: 768px) {
     .activities-container {
-        margin: 4em 0;
+        padding: 2em 0;
     }
     #Activités {
         margin: 1em 0;
     }  
 }
 .activities {
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
 @media screen and (min-width: 768px) {
     .activities {
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(10, .5em);
         grid-gap: 2.5em;
     }
 }
+
 .activities li {
     position: relative;
+    height: 14.5em;
     border-radius: 1em;
     box-shadow: .1em .1em .5em .1em var(--dark-gray);
+    margin: 1em 0;
+}
+@media screen and (min-width: 768px) {
+    .activities li {
+        height: auto;
+        margin: 0;
+    }
 }
 .activities img {
     width: 100%;
@@ -514,35 +521,39 @@ input[type="submit"].rechercher:hover {
     display: flex;
     flex-direction: column;
 }
-.act-1 {
-    grid-row: span 10;
+@media screen and (min-width: 768px) {
+    .act-1 {
+        grid-row: span 10;
+    }
+    .act-2 {
+        grid-row: span 6;
+    }
+    .act-3 {
+        grid-row: span 10;
+    }
+    .act-4 {
+        grid-row: span 5;
+    }
+    .act-5 {
+        grid-row: span 5;
+    }
+    .act-6 {
+        grid-row: span 4;
+    }
 }
-.act-2 {
-    grid-row: span 6;
-}
-.act-3 {
-    grid-row: span 10;
-}
-.act-4 {
-    grid-row: span 5;
-}
-.act-5 {
-    grid-row: span 5;
-}
-.act-6 {
-    grid-row: span 4;
-}
-
 
 /** ===== footer ===== **/
 footer {
-    width: 100%;
+    padding: 0 2rem;
     background-color: var(--gray);
 }
+@media only screen and (min-width: 768px) {
+    footer {
+        padding: 0;
+    }
+}
 footer section {
-    width: 90%;
     height: 35em;
-    margin: auto;
     padding: 3.125em 0;
     display: flex;
     flex-direction: column;
@@ -550,6 +561,8 @@ footer section {
 }
 @media only screen and (min-width: 768px){
     footer section {
+        width: 90%;
+        margin: auto;
         height: auto;
         padding: 3.125em 0;
         display: grid;
