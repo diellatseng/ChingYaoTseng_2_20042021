@@ -521,10 +521,20 @@ footer {
 }
 footer section {
     width: 90%;
+    height: 35em;
     margin: auto;
     padding: 3.125em 0;
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 768px){
+    footer section {
+        height: auto;
+        padding: 3.125em 0;
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
 }
 footer li {
     margin: 1em 0;
