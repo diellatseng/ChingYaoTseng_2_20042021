@@ -40,14 +40,16 @@
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <!--SearchBox-->
-                <form id="search-form" action="#" method="POST">
-                    <div class="search-container">
+                <form id="search-container" action="#" method="POST">
+                    <div>
                         <span class="fas fa-map-marker-alt"></span>
-                        <input type="text" class="destination" name="destination" placeholder="Destination...">
+                        <input type="text" name="destination" placeholder="Destination...">
                         <button type="submit" class="search-icon">
                             <i class="fas fa-search"></i>
                         </button>
-                        <input type="submit" class="rechercher" value="Rechercher">
+                        <button type="submit" class="search-text">
+                            Rechercher
+                        </button>
                     </div>
                 </form>
 
@@ -66,7 +68,10 @@
                         <i class="far fa-circle fa-stack-2x"></i>
                         <i class="fas fa-info fa-stack-1x "></i>
                     </span>
-                    <span>Plus de 500 logements sont disponibles dans cette ville  </span>
+                    
+                    <span>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </span>
                 </div>
             </section>
 
@@ -75,7 +80,7 @@
                 <!-- popular -->
                 <div class="popular-container">
                     <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
-                    <ul class="popular">
+                    <ul>
                         <li>
                             <a href="#">
                                 <img src="images/accommodations/4-small/hotel-le-soleil-du-matin.jpg" alt="Hôtel Le soleil du matin" />
@@ -138,7 +143,7 @@
                 <!-- accommodations -->
                 <div class="accom-container">
                     <h1 id="Hébergements">Hébergements à Marseille</h1>
-                    <ul class="accom">
+                    <ul>
                         <li>
                             <a href="#">
                                 <img src="images/accommodations/4-small/auberge-la-cannebiere.jpg" alt="auberge la cannebierec" />
@@ -261,7 +266,7 @@
             <section>
                 <div class="activities-container">
                     <h1 id="Activités">Activités à Marseille</h1>
-                    <ul class="activities">
+                    <ul>
                         <li class="act-1">
                             <a href="#">
                                 <div><h3>Vieux Port</h3></div>
