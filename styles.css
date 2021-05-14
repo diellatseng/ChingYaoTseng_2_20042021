@@ -122,6 +122,16 @@ nav li a {
         color: var(--rev-blue);
     }
 }
+nav .active {
+    border-bottom: .2em solid var(--rev-blue);
+}
+@media only screen and (min-width: 768px) {
+    nav .active {
+        border-bottom: none;
+        border-top: var(--rev-blue) solid .125em;
+        color: var(--rev-blue);
+    }
+}
 /* === Search form === */
 #search-form {
     width: 100%;
