@@ -6,7 +6,6 @@
     --medium-gray: #DFDFDF;
     --dark-gray: #CCC;
   }
-
 html, body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
@@ -16,18 +15,13 @@ html, body {
         font-size: 16px;
     }
 }
-
-.font-weight-bold {
-    font-weight: 700;
-}
-
-h1 {font-size: 1.5rem; font-weight: 700; margin: .5em 0;}
-h2 {font-size: 1.3rem; font-weight: 700; margin-bottom: .5em;}
-h3 {font-size: 1.1rem; font-weight: 700; }
-a {text-decoration: none; color: black;}
-p {margin-bottom: .5em}
-li {list-style: none;}
-
+h1 { font-size: 1.5rem; font-weight: 700; margin: .5em 0; }
+h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: .5em; }
+h3 { font-size: 1.1rem; font-weight: 700; }
+a { text-decoration: none; color: black; }
+p { margin-bottom: .5em; }
+li { list-style: none; }
+.font-weight-bold { font-weight: 700; }
 
 /* ==== Main Page ==== */
 header, main {
@@ -42,14 +36,16 @@ header, main {
     width: 90%;
     margin: 1em auto;
 }
-.tittle-search-filter-container h1 {
-    margin-bottom: .5em;
-}
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .tittle-search-filter-container {
         width: 100%;
         margin: 0;
     }
+}
+.tittle-search-filter-container h1 {
+    margin-bottom: .5em;
+}
+@media only screen and (min-width: 768px){
     .tittle-search-filter-container h1 {
         margin-bottom: .3em;
     }
@@ -71,7 +67,6 @@ header {
     }
 }
 #subscribe-button {
-    order: 0;
     margin: 1em 1em 0 0 ;
     font-weight: 600;
     text-align: center;
@@ -93,9 +88,21 @@ header {
 nav {
     width: 100%;
 }
+@media only screen and (min-width: 768px) {
+    nav {
+        width: auto;
+    }
+}
 nav ul {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+@media only screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        margin-top: 0 auto;
+    }
 }
 nav li { 
     text-align: center;
@@ -107,47 +114,30 @@ nav li a {
     border-bottom: .2em solid var(--gray);
 }
 @media only screen and (min-width: 768px) {
-    nav {
-        width: auto;
-    }
-    nav ul {
-        display: flex;
-        align-items: center;
-        margin-top: 0; /**************************************************short*/
-        margin-bottom: 0;
-        padding: 0;
-    }
-    nav li { 
-        padding: 0;
-        border-bottom: none;
-        text-align: center;
-    }   
     nav li a {
-        display: block;
         margin-bottom: 0;
         padding: 3em 3em;
         border-bottom: none;
         font-weight: 600;
     }
-    nav li a:hover{
+    nav li a:hover {
         border-top: var(--rev-blue) solid .125em;
         color: var(--rev-blue);
     }
 }
-
 /* === Search form === */
 #search-form {
     width: 100%;
     margin: 1.5em 0;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     #search-form {
         width: 30%;
     }
 }
 .search-container {
     display: grid;
-    grid-template-columns: 3.5rem auto 3.5rem;
+    grid-template-columns: 15% 70% 15%;
     height: 3.5rem;
     border-radius: 1em;
     background-color: var(--gray);
@@ -155,7 +145,6 @@ nav li a {
 @media only screen and (min-width: 768px){
     .search-container {
         grid-template-columns: 3rem auto 8rem;
-        height: 3rem;
     }    
 }
 .fa-map-marker-alt {
@@ -172,15 +161,16 @@ nav li a {
     font-size: 1.2rem;
 }
 input[type="text"].destination {
-    margin-right: -1em;
-    padding: 0 1em;
-    border: .15em solid var(--gray);
-    font-size: 1em;  /*****************************************************delete****/
+    margin-right: -1rem;
+    padding: 0 1rem;
+    border: .15rem solid var(--gray);
+    font-size: 1.2rem; 
     font-weight: bold;
 }
 @media only screen and (min-width: 768px){
     input[type="text"].destination {
         margin-right: 0;
+        font-size: 1.1rem;
     }
 }
 input[type="text"].destination:hover {
@@ -190,7 +180,7 @@ input[type="submit"].rechercher {
     border-radius: 0 1em 1em 0;
     border: none;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1rem;
     background-color: var(--rev-blue);
     color: white;
     cursor: pointer;
