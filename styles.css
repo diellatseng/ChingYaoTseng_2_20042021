@@ -110,10 +110,16 @@ nav li a {
     padding: 1em 0;
     border-bottom: .2em solid var(--gray);
 }
+@media only screen and (min-width: 768px) {
+    nav li a {
+        margin: 1em;
+        font-weight: 600;
+    }
+}
 @media only screen and (min-width: 1200px) {
     nav li a {
         margin-bottom: 0;
-        padding: 3em 3em;
+        padding: 3em;
         border-bottom: none;
         font-weight: 600;
     }
@@ -149,9 +155,9 @@ nav .active {
     border-radius: 1em;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 768px){
     .search-container {
-        grid-template-columns: 3rem auto 8rem;
+        grid-template-columns: 3.5rem auto 8em;
     }    
 }
 .fa-map-marker-alt {
@@ -203,7 +209,7 @@ input[type="submit"].rechercher:hover {
         background-color: var(--rev-blue);
         color: white;
     }
-@media only screen and (min-width: 1200px){  
+@media only screen and (min-width: 768px){  
     .search-icon {
         display: none; /* Hide search icon for larger screen*/
     }
@@ -211,7 +217,7 @@ input[type="submit"].rechercher:hover {
 .rechercher {
     display: none; /* Hide text for smaller screen*/
 }
-@media only screen and (min-width: 1200px){  
+@media only screen and (min-width: 768px){  
     .rechercher {
         display: block; /* Display text for smaller screen*/
     }
@@ -237,17 +243,19 @@ input[type="submit"].rechercher:hover {
     align-content: space-around;
     flex-wrap: wrap;
     justify-content: space-between;
-
     height: 10em;
     margin-top: 1em;
+}
+@media only screen and (min-width: 768px) {
+    #filter-container div {
+        height: fit-content;
+    }
 }
 @media only screen and (min-width: 1200px) {
     #filter-container div {
         display: flex;
         align-content: none;
         justify-content: space-between;
-
-        height: fit-content;
         margin-top: 0;
     }
 }
@@ -407,7 +415,7 @@ input[type="submit"].rechercher:hover {
 .accom {
     margin-bottom: 3em;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     .accom {
         display: flex;
         align-content: space-around;
@@ -417,14 +425,7 @@ input[type="submit"].rechercher:hover {
         margin-bottom: 1em;
     }
 }
-.accom img {
-    width: 100%;
-    height: 8em;
-    object-fit: cover;
-    border-radius: 1.5em 1.5em 0 0;
-}
 .accom li {
-    width: 100%;
     height: 14.5em;
     margin: 1em 0;
     padding: .4em;
@@ -432,12 +433,17 @@ input[type="submit"].rechercher:hover {
     box-shadow: .1em .1em .5em .1em var(--dark-gray);
     background-color: white;
 }
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     .accom li {
         width: 31%;
         margin: 0;
     }
+}
+.accom img {
+    width: 100%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 1.5em 1.5em 0 0;
 }
 .accom div {
     padding: .5em 1em;
@@ -461,6 +467,14 @@ input[type="submit"].rechercher:hover {
     flex-wrap: wrap;
     margin: auto;
 }
+@media screen and (min-width: 768px) {
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+        margin: 2em 0;
+    }
+}
 @media screen and (min-width: 1200px) {
     .activities {
         display: grid;
@@ -477,10 +491,14 @@ input[type="submit"].rechercher:hover {
     border-radius: 1em;
     box-shadow: .1em .1em .5em .1em var(--dark-gray);
 }
+@media screen and (min-width: 768px) {
+    .activities li {
+        margin: 0;
+    }
+}
 @media screen and (min-width: 1200px) {
     .activities li {
         height: auto;
-        margin: 0;
     }
 }
 .activities img {
@@ -548,18 +566,21 @@ footer section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     height: 35em;
     padding: 3.125em 0;
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 768px){
     footer section {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
-        width: 90%;
         height: auto;
         margin: auto;
         padding: 3.125em 0;
+    }
+}
+@media only screen and (min-width: 1200px){
+    footer section {
+        width: 90%;
     }
 }
 footer li {
