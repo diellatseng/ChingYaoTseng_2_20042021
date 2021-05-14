@@ -10,7 +10,7 @@ html, body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     html, body {
         font-size: 16px;
     }
@@ -27,7 +27,7 @@ li { list-style: none; }
 header, main {
     margin: auto;
 } 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     header, main {
         width: 90%; 
     }
@@ -36,13 +36,13 @@ header, main {
     width: 90%;
     margin: 1em auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .tittle-search-filter-container {
         width: 100%;
         margin: 0;
     }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     .tittle-search-filter-container h1 {
         margin-bottom: .3em;
     }
@@ -57,7 +57,7 @@ header {
 #logo {
     margin: 1rem 0 0 1rem ;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #logo {
         width: 7em;
         margin: 0 45rem 0 0 ;
@@ -69,7 +69,7 @@ header {
     text-align: center;
     color: var(--rev-blue);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #subscribe-button {
         order: 1;
         margin: 0 ;
@@ -85,7 +85,7 @@ header {
 nav {
     width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     nav {
         width: auto;
     }
@@ -94,7 +94,7 @@ nav ul {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     nav ul {
         display: flex;
         align-items: center;
@@ -110,7 +110,7 @@ nav li a {
     padding: 1em 0;
     border-bottom: .2em solid var(--gray);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     nav li a {
         margin-bottom: 0;
         padding: 3em 3em;
@@ -125,7 +125,7 @@ nav li a {
 nav .active {
     border-bottom: .2em solid var(--rev-blue);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     nav .active {
         border-bottom: none;
         border-top: var(--rev-blue) solid .125em;
@@ -137,7 +137,7 @@ nav .active {
     width: 100%;
     margin: 1.5em 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #search-form {
         width: 30%;
     }
@@ -149,7 +149,7 @@ nav .active {
     border-radius: 1em;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     .search-container {
         grid-template-columns: 3rem auto 8rem;
     }    
@@ -159,7 +159,7 @@ nav .active {
     font-size: 1.3rem;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     .fa-map-marker-alt {
         font-size: 1rem;
     } 
@@ -174,7 +174,7 @@ input[type="text"].destination {
     font-size: 1.2rem; 
     font-weight: bold;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     input[type="text"].destination {
         margin-right: 0;
         font-size: 1.1rem;
@@ -203,7 +203,7 @@ input[type="submit"].rechercher:hover {
         background-color: var(--rev-blue);
         color: white;
     }
-@media only screen and (min-width: 768px){  
+@media only screen and (min-width: 1200px){  
     .search-icon {
         display: none; /* Hide search icon for larger screen*/
     }
@@ -211,7 +211,7 @@ input[type="submit"].rechercher:hover {
 .rechercher {
     display: none; /* Hide text for smaller screen*/
 }
-@media only screen and (min-width: 768px){  
+@media only screen and (min-width: 1200px){  
     .rechercher {
         display: block; /* Display text for smaller screen*/
     }
@@ -224,7 +224,7 @@ input[type="submit"].rechercher:hover {
     font-weight: 700;
     font-size: 1.1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #filter-container {
         display: flex;
         justify-content: space-between;
@@ -241,7 +241,7 @@ input[type="submit"].rechercher:hover {
     height: 10em;
     margin-top: 1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     #filter-container div {
         display: flex;
         align-content: none;
@@ -271,7 +271,7 @@ input[type="submit"].rechercher:hover {
     background-color: white;
     cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .btn {
         margin: 0 1em;
         padding: .5em 1em .5em 1.5em;
@@ -290,7 +290,7 @@ input[type="submit"].rechercher:hover {
     background-color: var(--light-blue); 
     color: var(--rev-blue);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .btn > span { 
         margin: -.5em .5em -.5em -1.5em;
         padding: .8em 1.3em;
@@ -317,7 +317,7 @@ input[type="submit"].rechercher:hover {
     display: flex;
     flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .accom-popular-container{
         display: grid;
         grid-template-columns: 68% 30%;
@@ -335,7 +335,7 @@ input[type="submit"].rechercher:hover {
     padding: 2em;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .popular-container {
         order: 1;
         border-radius: 1em; 
@@ -351,7 +351,7 @@ input[type="submit"].rechercher:hover {
     justify-content: space-around;
     height: 34em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .popular {
         height: 37em;
     }
@@ -369,17 +369,17 @@ input[type="submit"].rechercher:hover {
     flex-wrap: wrap;
 }
 .popular img {
-    width: 7.5em;
+    width: 40%;
     height: 9.2em;
     object-fit: cover;
     border-radius: 1.5em 0 0 1.5em;
 }
 .popular div {
     position: relative;
-    width: 12.5em;
+    width: 60%;
     padding: .5em 1em .5em 1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .popular div {
         padding: 1em;
     }
@@ -394,7 +394,7 @@ input[type="submit"].rechercher:hover {
     padding: 2em;
     border-radius: 1em; 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .accom-container {
         order: 0;
         display: flex;
@@ -407,7 +407,7 @@ input[type="submit"].rechercher:hover {
 .accom {
     margin-bottom: 3em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .accom {
         display: flex;
         align-content: space-around;
@@ -433,7 +433,7 @@ input[type="submit"].rechercher:hover {
     background-color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .accom li {
         width: 31%;
         margin: 0;
@@ -448,7 +448,7 @@ input[type="submit"].rechercher:hover {
 .activities-container {
     padding: 2em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .activities-container {
         padding: 2em 0;
     }
@@ -461,7 +461,7 @@ input[type="submit"].rechercher:hover {
     flex-wrap: wrap;
     margin: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .activities {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -477,7 +477,7 @@ input[type="submit"].rechercher:hover {
     border-radius: 1em;
     box-shadow: .1em .1em .5em .1em var(--dark-gray);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .activities li {
         height: auto;
         margin: 0;
@@ -505,8 +505,8 @@ input[type="submit"].rechercher:hover {
     margin: auto 0;
     padding-left: 1em;
 }
-@media screen and (min-width: 768px) {
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         .act-1 {
             order: 1;
             grid-row: span 10;
@@ -539,7 +539,7 @@ footer {
     padding: 0 2rem;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     footer {
         padding: 0;
     }
@@ -552,7 +552,7 @@ footer section {
     height: 35em;
     padding: 3.125em 0;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
     footer section {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
