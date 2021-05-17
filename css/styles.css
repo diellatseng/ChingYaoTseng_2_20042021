@@ -145,12 +145,12 @@ nav li a {
 
 nav .active {
     border-bottom: .2em solid var(--rev-blue);
+    color: var(--rev-blue);
 }
 @media only screen and (min-width: 992px) {
     nav .active {
         border-bottom: none;
         border-top: var(--rev-blue) solid .125em;
-        color: var(--rev-blue);
     }
 }
 
