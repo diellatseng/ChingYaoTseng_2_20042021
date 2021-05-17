@@ -74,14 +74,7 @@ header {
     text-align: center;
     color: var(--rev-blue);
 }
-@media only screen and (min-width: 992px) {    /********************/
-    #subscribe-button {
-        order: 1;
-        margin: 0 ;
-        padding: 1.5em; 
-    }
-}
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) { 
     #subscribe-button {
         order: 1;
         margin: 0 ;
@@ -298,7 +291,7 @@ input[type="text"]:hover {
         font-size: 1.05rem;
     }
 }
-.btn > span { 
+.btn > span.fas { 
     justify-content: center;
 
     margin: -.15em .5em -.15em -1.5em;
@@ -310,7 +303,7 @@ input[type="text"]:hover {
     color: var(--rev-blue);
 }
 @media only screen and (min-width: 1200px) {
-    .btn > span { 
+    .btn > span.fas { 
         margin: -.5em .5em -.5em -1.5em;
         padding: .8em 1.3em;
         border-radius: 2em;
@@ -387,6 +380,7 @@ input[type="text"]:hover {
     }
 }
 .popular-container li {
+    width: 100%; /*fix li width differences when height is the same*/
     height: 10em;
     padding: .4em;
     border-radius: 1.5em;
