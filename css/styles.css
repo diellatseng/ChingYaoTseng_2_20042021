@@ -15,14 +15,11 @@ html, body {
         font-size: 16px;
     }
 }
-h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: .5em; }
-h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: .5em; }
-h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5em; }
 a { text-decoration: none; color: black; }
 p { margin-bottom: .5em; }
 li { list-style: none; }
-
 .font-weight-bold { font-weight: 700; }
+
 /* ==== Main Page ==== */
 header, main {
     margin: auto;
@@ -31,6 +28,21 @@ header, main {
     header, main {
         width: 90%; 
     }
+}
+main h1 {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: .5em; 
+}
+main h2 {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: .5em;
+}
+main h3 {
+    font-size: 1.1rem; 
+    font-weight: 700; 
+    margin-bottom: .5em;
 }
 .tittle-search-filter-container {
     width: 90%;
@@ -122,7 +134,6 @@ nav li a {
         margin: 0;
         padding: 3em;
         border-bottom: none;
-        font-weight: 600;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -160,11 +171,7 @@ nav .active {
     border-radius: 1em;
     background-color: var(--gray);
 }
-@media only screen and (min-width: 1200px){
-    #search-container div {
-        grid-template-columns: 3rem auto 8rem;
-    }    
-}
+
 .fa-map-marker-alt {
     margin: auto;
     font-size: 1.3rem;
@@ -183,7 +190,6 @@ input[type="text"] {
     padding: 0 1rem;
     border: .15rem solid var(--gray);
     font-size: 1.2rem; 
-    font-weight: bold;
 }
 @media only screen and (min-width: 1200px){
     input[type="text"] {
@@ -196,7 +202,7 @@ input[type="text"]:hover {
 }
 .search  {
         border-width: 0;
-        border-radius: 1em;
+        border-radius: 0 1em 1em 0;
         background-color: var(--rev-blue);
         color: white;
         cursor: pointer;
@@ -211,6 +217,7 @@ input[type="text"]:hover {
 }
 .search span {
     display: none; /* Hide text for smaller screen*/
+    margin: 0 1em;
     font-size: 1.2rem;
 }
 @media only screen and (min-width: 768px){  
@@ -225,8 +232,7 @@ input[type="text"]:hover {
 #filter-container {
     width: 100%;
     margin: 1.5em 0;
-    font-weight: 700;
-    font-size: 1.2em;  /* Font size of "filter" */
+    font-size: 1.1rem;  /* Font size of "filter" */
 }
 @media only screen and (min-width: 1200px) {
     #filter-container {
@@ -238,38 +244,28 @@ input[type="text"]:hover {
 }
 #filter-container div {
     display: flex;
-    align-content: space-around;
     flex-wrap: wrap;
-    height: 10em;
     margin-top: 1em;
-}
-@media only screen and (min-width: 768px) {
-    #filter-container div {
-        height: 100%;
-    }
 }
 @media only screen and (min-width: 1200px) {
     #filter-container div {
         margin-top: 0;
     }
 }
-
 #filter-container span {
     display: flex;
     align-items: center;
-    font-size: 1.2em; /* Size of icons */
+    font-size: 1.2rem; /* Size of icons */
 }
 .btn {
     display: flex;
     align-items: center;
-    margin: 0 1em 0 0;
+    margin: 0 1em .5em 0;
     padding: .2em 1em .2em 1.5em;
     border-radius: 1.5em;
     border: .15em var(--medium-gray) solid;
     border-left: none;
-    font-weight: 600;
     background-color: white;
-    cursor: pointer;
     font-size: 1.05rem; 
 }
 @media only screen and (min-width: 1200px) {
@@ -277,6 +273,7 @@ input[type="text"]:hover {
         margin: 0 1em;
         padding: .5em 1em .5em 1.5em;
         border-radius: 2em;
+        cursor: pointer;
     }
 }
 .btn > span.fas { 
@@ -338,7 +335,8 @@ input[type="text"]:hover {
         border-radius: 1em; 
     }
 }
-.popular h1 {
+
+.popular h2 {
     display: flex;
     justify-content: space-between;
 }
@@ -458,8 +456,9 @@ input[type="text"]:hover {
 .accommodation div {
     padding: .5em 1em;
 }
-
-
+.read-more {
+    font-size: 1.3rem;
+}
 /** acrivities area **/
 .activities-container {
     padding: 2em;
@@ -593,6 +592,11 @@ footer section {
     footer section {
         width: 90%;
     }
+}
+footer h2 {
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    margin-bottom: .5em; 
 }
 footer li {
     margin: 1em 0;
