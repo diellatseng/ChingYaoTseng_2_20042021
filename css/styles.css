@@ -297,14 +297,16 @@ input[type="text"]:hover {
 #info {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
-.fa-stack { 
-    margin: 0 1em 0 0;
-    font-size: .8em; 
+.fa-info { 
+    padding: .5em 1em;
+    margin: 1em;
+    border: .2em solid var(--gray);
+    border-radius: 2em;
+    font-size: .5rem;
+    color: var(--rev-blue);
 }
-.fa-circle { color: var(--gray);}
-.fa-info { color: var(--rev-blue);}
 
 /** ===== Main results ===== **/ 
 .accom-popular-container {
