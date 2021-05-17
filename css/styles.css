@@ -27,7 +27,7 @@ li { list-style: none; }
 header, main {
     margin: auto;
 } 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     header, main {
         width: 90%; 
     }
@@ -60,7 +60,7 @@ header {
 @media only screen and (min-width: 992px) { 
     #logo {
         width: 7em;
-        margin: auto 35vw auto 2em;
+        margin: 0 35vw 0 0;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -258,7 +258,6 @@ input[type="text"]:hover {
 @media only screen and (min-width: 1200px) {
     #filter-container div {
         display: flex;
-        align-content: none;
         justify-content: space-between;
         margin-top: 0;
     }
@@ -267,18 +266,16 @@ input[type="text"]:hover {
 #filter-container span {
     display: flex;
     align-items: center;
+    font-size: 1.1em;
 }
 .btn {
     display: flex;
     align-items: center;
-
     margin: 0;
     padding: 0 1em 0 1.5em;
-
     border-radius: 1.5em;
     border: .15em var(--medium-gray) solid;
     border-left: none;
-
     font-weight: 600;
     background-color: white;
     cursor: pointer;
@@ -293,12 +290,9 @@ input[type="text"]:hover {
 }
 .btn > span.fas { 
     justify-content: center;
-
     margin: -.15em .5em -.15em -1.5em;
     padding: .8em 1.3em;
     border-radius: 1.5em;
-
-    font-size: 1.3em;
     background-color: var(--light-blue); 
     color: var(--rev-blue);
 }
