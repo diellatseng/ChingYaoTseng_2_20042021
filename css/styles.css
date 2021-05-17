@@ -52,20 +52,16 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 #logo {
-    margin: 1rem 0 0 1rem ;
+    margin: 1rem auto 0 1rem ;
 }
 @media only screen and (min-width: 992px) { 
     #logo {
-        width: 7em;
-        margin: 0 35vw 0 0;
+        margin: 0 auto 0 0;
     }
-}
-@media only screen and (min-width: 1200px) {
-    #logo {
-        margin: 0 45vw 0 0;
+    #logo img {
+        width: 7em;
     }
 }
 #subscribe-button {
@@ -197,6 +193,9 @@ input[type="text"] {
 input[type="text"]:hover {
     border: .15em solid var(--dark-gray);
 }
+.search {
+    
+}
 .search-icon {
         display: block; /* Display search icon for smaller screen*/
         border-width: 0;
@@ -252,7 +251,7 @@ input[type="text"]:hover {
 }
 @media only screen and (min-width: 768px) {
     #filter-container div {
-        height: fit-content;
+        height: 100%;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -337,21 +336,21 @@ input[type="text"]:hover {
 .rev-blue { color: var(--rev-blue); }
 
 /** ===== popular area ===== **/
-.popular-container {
+.popular {
     padding: 2em;
     background-color: var(--gray);
 }
 @media only screen and (min-width: 1200px) {
-    .popular-container {
+    .popular {
         order: 1;
         border-radius: 1em; 
     }
 }
-.popular-container h1 {
+.popular h1 {
     display: flex;
     justify-content: space-between;
 }
-.popular-container ul {
+.popular ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,7 +358,7 @@ input[type="text"]:hover {
     height: 34em;
 }
 @media only screen and (min-width: 992px) {
-    .popular-container ul {
+    .popular ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -367,13 +366,13 @@ input[type="text"]:hover {
     }
 }
 @media only screen and (min-width: 1200px) {
-    .popular-container ul {
+    .popular ul {
         flex-direction: column;
         justify-content: space-around;
         height: 37em;
     }
 }
-.popular-container li {
+.popular li {
     width: 100%; /*fix li width differences when height is the same*/
     height: 10em;
     padding: .4em;
@@ -382,32 +381,32 @@ input[type="text"]:hover {
     background-color: white;
 }
 @media only screen and (min-width: 992px) {
-    .popular-container li {
+    .popular li {
         width: 30vw;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .popular-container li {
+    .popular li {
         width: 100%;
     }
 }
-.popular-container a {
+.popular a {
     display: flex;
     flex-wrap: wrap;
 }
-.popular-container img {
+.popular img {
     width: 40%;
     height: 9.2em;
     object-fit: cover;
     border-radius: 1.5em 0 0 1.5em;
 }
-.popular-container div {
+.popular div {
     position: relative;
     width: 60%;
     padding: .5em 1em .5em 1em;
 }
 @media only screen and (min-width: 1200px) {
-    .popular-container div {
+    .popular div {
         padding: 1em;
     }
 }
@@ -417,12 +416,12 @@ input[type="text"]:hover {
 }
 
 /** accommodation area **/
-.accom-container {
+.accommodation {
     padding: 2em;
     border-radius: 1em; 
 }
 @media only screen and (min-width: 1200px) {
-    .accom-container {
+    .accommodation {
         order: 0;
         display: flex;
         flex-direction: column;
@@ -431,11 +430,11 @@ input[type="text"]:hover {
         background-color: var(--gray);
     }
 }
-.accom-container ul {
+.accommodation ul {
     margin-bottom: 3em;
 }
 @media only screen and (min-width: 768px) {
-    .accom-container ul {
+    .accommodation ul {
         display: flex;
         align-content: space-around;
         flex-wrap: wrap;
@@ -444,7 +443,7 @@ input[type="text"]:hover {
         margin-bottom: 1em;
     }
 }
-.accom-container li {
+.accommodation li {
     height: 14.5em;
     margin: 1em 0;
     padding: .4em;
@@ -453,18 +452,18 @@ input[type="text"]:hover {
     background-color: white;
 }
 @media only screen and (min-width: 768px) {
-    .accom-container li {
+    .accommodation li {
         width: 31%;
         margin: 0;
     }
 }
-.accom-container img {
+.accommodation img {
     width: 100%;
     height: 8em;
     object-fit: cover;
     border-radius: 1.5em 1.5em 0 0;
 }
-.accom-container div {
+.accommodation div {
     padding: .5em 1em;
 }
 
