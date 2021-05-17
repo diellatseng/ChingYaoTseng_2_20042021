@@ -116,7 +116,7 @@ nav li a {
 }
 @media only screen and (min-width: 768px) {
     nav li a {
-        margin: 1em;
+        margin: 1em 0;
         font-weight: 600;
     }
 }
@@ -158,14 +158,14 @@ nav .active {
 }
 #search-container div {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 3.5rem 70% auto;
     height: 3.5rem;
     border-radius: 1em;
     background-color: var(--gray);
 }
 @media only screen and (min-width: 1200px){
     #search-container div {
-        grid-template-columns: 3rem auto 8rem;
+        grid-template-columns: 3.5rem auto min-content;
     }    
 }
 .fa-map-marker-alt {
@@ -204,13 +204,14 @@ input[type="text"]:hover {
         background-color: var(--rev-blue);
         color: white;
     }
-@media only screen and (min-width: 1200px){  
+@media only screen and (min-width: 768px){  
     .search-icon {
         display: none; /* Hide search icon for larger screen*/
     }
 }
 .search-text {
     display: none; /* Hide text for smaller screen*/
+    padding: 0 1em;
     border-radius: 0 1em 1em 0;
     border: none;
     font-weight: bold;
@@ -219,7 +220,7 @@ input[type="text"]:hover {
     color: white;
     cursor: pointer;
 }
-@media only screen and (min-width: 1200px){  
+@media only screen and (min-width: 768px){  
     .search-text {
         display: block; /* Display text for smaller screen*/
     }
@@ -238,7 +239,7 @@ input[type="text"]:hover {
     #filter-container {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: max-content;
     }
 }
 
