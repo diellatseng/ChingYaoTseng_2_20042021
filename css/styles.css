@@ -21,8 +21,8 @@ h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5em; }
 a { text-decoration: none; color: black; }
 p { margin-bottom: .5em; }
 li { list-style: none; }
-.font-weight-bold { font-weight: 700; }
 
+.font-weight-bold { font-weight: 700; }
 /* ==== Main Page ==== */
 header, main {
     margin: auto;
@@ -112,7 +112,7 @@ nav li a {
 }
 @media only screen and (min-width: 768px) {
     nav li a {
-        margin: 1em;
+        margin: 1em 0;
         font-weight: 600;
     }
 }
@@ -142,6 +142,7 @@ nav .active {
         color: var(--rev-blue);
     }
 }
+
 /* === Search form === */
 #search-container {
     width: 100%;
@@ -154,7 +155,7 @@ nav .active {
 }
 #search-container div {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 3.5em 70% auto;
     height: 3.5rem;
     border-radius: 1em;
     background-color: var(--gray);
@@ -193,33 +194,27 @@ input[type="text"] {
 input[type="text"]:hover {
     border: .15em solid var(--dark-gray);
 }
-.search {
-    
-}
-.search-icon {
-        display: block; /* Display search icon for smaller screen*/
+.search  {
         border-width: 0;
         border-radius: 1em;
         background-color: var(--rev-blue);
         color: white;
+        cursor: pointer;
     }
-@media only screen and (min-width: 1200px){  
-    .search-icon {
+.search i {
+    display: block; /* Display search icon for smaller screen*/
+}
+@media only screen and (min-width: 768px){  
+    .search i {
         display: none; /* Hide search icon for larger screen*/
     }
 }
-.search-text {
+.search span {
     display: none; /* Hide text for smaller screen*/
-    border-radius: 0 1em 1em 0;
-    border: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    background-color: var(--rev-blue);
-    color: white;
-    cursor: pointer;
+    font-size: 1.2rem;
 }
-@media only screen and (min-width: 1200px){  
-    .search-text {
+@media only screen and (min-width: 768px){  
+    .search span {
         display: block; /* Display text for smaller screen*/
     }
 }
