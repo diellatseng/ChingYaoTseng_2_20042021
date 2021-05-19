@@ -264,8 +264,8 @@ input[type="text"]:hover {
 .btn {
     display: flex;
     align-items: center;
-    margin: 0 1em .5em 0;
-    padding: .2em 1em .2em 1.5em;
+    margin: 0 .8em .5em 0;
+    padding: .2em .5em .2em 1em;
     border-radius: 1.5em;
     border: .15em var(--medium-gray) solid;
     border-left: none;
@@ -282,7 +282,7 @@ input[type="text"]:hover {
 }
 .btn > span.fas { 
     justify-content: center;
-    margin: -.15em .5em -.15em -1.5em;
+    margin: -.15em .4em -.15em -1em;
     padding: .8em 1.3em;
     border-radius: 1.5em;
     background-color: var(--light-blue); 
