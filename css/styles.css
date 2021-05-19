@@ -12,13 +12,20 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
-main h1, main h2 {
+main h1, 
+main h2 {
     font-size: 1.5rem; 
 }
-main h1, main h2, main h3, .font-weight-bold {
+main h1, 
+main h2, 
+main h3, 
+.font-weight-bold {
     font-weight: 700; 
 }
-main h1, main h2,main h3, p {
+main h1, 
+main h2,
+main h3, 
+p {
     margin-bottom: .5em; 
 }
 a { 
@@ -28,7 +35,6 @@ a {
 li { 
     list-style: none; 
 }
-/* ==== Header ==== */
 .tittle-search-filter-container {
     margin: 1em 0;
     padding: 0 2em;
@@ -47,7 +53,6 @@ header {
     text-align: center;
     color: var(--rev-blue);
 }
-/* === Navigation ==== */
 nav {
     width: 100%;
 }
@@ -68,7 +73,6 @@ nav .active {
     border-bottom: .2em solid var(--rev-blue);
     color: var(--rev-blue);
 }
-/* === Search form === */
 #search-form {
     margin: 1.5em 0;
 }
@@ -103,7 +107,6 @@ input[type="text"] {
 .search p {
     display: none; /* Hide text for smaller screen*/
 }
-/** ===== Filters ===== **/
 #filter-container {
     width: 100%;
     margin: 1.5em 0;
@@ -143,9 +146,6 @@ input[type="text"] {
     background-color: var(--light-blue); 
     color: var(--rev-blue);
 }
-.btn:hover {
-    box-shadow: 0 0 .7em .1em var(--medium-gray);
-}
 #info {
     display: flex;
     align-items: center;
@@ -162,18 +162,12 @@ input[type="text"] {
     font-size: .5rem;
     color: var(--rev-blue);
 }
-
-/** ===== Main results ===== **/ 
 .accom-popular-container {
     display: flex;
     flex-direction: column;
 }
-                      
-/** rating stars **/
 .fa-star { color: var(--dark-gray); font-size: 0.5em;}
 .rev-blue { color: var(--rev-blue); }
-
-/** ===== popular area ===== **/
 .popular {
     padding: 2em;
     background-color: var(--gray);
@@ -216,8 +210,6 @@ input[type="text"] {
     position: absolute;
     bottom: 0.3125em;
 }
-
-/** accommodation area **/
 .accommodation {
     padding: 2em;
     border-radius: 1em; 
@@ -245,8 +237,6 @@ input[type="text"] {
 .read-more {
     font-size: 1.3rem;
 }
-
-/** acrivities area **/
 .activities-container {
     padding: 2em;
 }
@@ -265,9 +255,9 @@ input[type="text"] {
 }
 .activities-container img {
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
-    border-radius:1em;
+    border-radius: 1em;
 }
 .activities-container div {
     position: absolute;
@@ -285,8 +275,6 @@ input[type="text"] {
     margin: auto 0;
     padding-left: 1em;
 }
-
-/** ===== footer ===== **/
 footer {
     padding: 0 2rem;
     background-color: var(--gray);
@@ -306,7 +294,6 @@ footer h2 {
 footer li {
     margin: 1em 0;
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     nav li a {
@@ -350,13 +337,13 @@ footer li {
         padding: 3.125em 0;
     }
 }
-
 /* Large devices (desktops, 992px and up)*/
 @media only screen and (min-width: 992px) {
     body {
         font-size: 16px;
     }
-    header, main {
+    header, 
+    main {
         margin: auto;
         width: 90%; 
     }
@@ -397,6 +384,9 @@ footer li {
     .search-text:hover {
         background-color: var(--dark-blue);
     }
+    .btn:hover {
+        box-shadow: 0 0 .7em .1em var(--medium-gray);
+    }
     .popular {
         border-radius: 1em; 
     }
@@ -409,7 +399,6 @@ footer li {
         width: 31%;
     }
 }
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .tittle-search-filter-container {
