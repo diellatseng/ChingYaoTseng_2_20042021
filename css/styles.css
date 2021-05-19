@@ -219,13 +219,13 @@ input[type="text"]:hover {
         display: none; /* Hide search icon for larger screen*/
     }
 }
-.search span {
+.search p {
     display: none; /* Hide text for smaller screen*/
     margin: 0 1em;
     font-size: 1.2rem;
 }
 @media only screen and (min-width: 768px){  
-    .search span {
+    .search p {
         display: block; /* Display text for smaller screen*/
     }
 }
@@ -242,9 +242,6 @@ input[type="text"]:hover {
     #filter-container {
         display: flex;
     }
-    .filter-title {
-        margin-right: 1em;
-    }
 }
 #filter-container div {
     display: flex;
@@ -255,6 +252,11 @@ input[type="text"]:hover {
     #filter-container div {
         margin-top: 0;
     }
+}
+#filter-container p {
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
 }
 #filter-container span {
     display: flex;
@@ -302,6 +304,9 @@ input[type="text"]:hover {
     display: flex;
     align-items: center;
     margin-bottom: 2em;
+}
+#info p {
+    margin-bottom: 0;
 }
 .fa-info { 
     padding: .5em 1em;
