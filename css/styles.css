@@ -386,9 +386,6 @@ footer li {
         border-bottom: none;
         border-top: var(--rev-blue) solid .125em;
     }
-    .search span:hover {
-        background-color: var(--dark-blue);
-    }
     .btn:hover {
         box-shadow: 0 0 .7em .1em var(--medium-gray);
     }
