@@ -386,7 +386,7 @@ footer li {
         border-bottom: none;
         border-top: var(--rev-blue) solid .125em;
     }
-    .search-text:hover {
+    .search span:hover {
         background-color: var(--dark-blue);
     }
     .btn:hover {
